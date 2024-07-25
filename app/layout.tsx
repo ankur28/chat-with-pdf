@@ -21,9 +21,16 @@ export default function RootLayout({
   return (
     <ClerkProvider>
         <html lang="en">
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
           <body className="min-h-screen h-screen overflow-hidden flex flex-col">
             {children}
           </body>
+        </ThemeProvider>
         </html>
     </ClerkProvider>
   );

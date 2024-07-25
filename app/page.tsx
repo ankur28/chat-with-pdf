@@ -1,3 +1,4 @@
+import ModeToggle from "@/components/DarkModeToggle";
 import { Button } from "@/components/ui/button";
 import {
   GlobeIcon,
@@ -51,33 +52,39 @@ const features = [
 
 export default function Home() {
   return (
-    <main className="flex-1 overflow-scroll p-2 lg:p-5 bg-gradient-to-bl from-white to-indigo-600 text-indigo-600">
-      <div className="bg-white py-24 sm:py-32 rounded-md drop-shadow-xl">
+    <main className="flex-1 overflow-scroll p-2 lg:p-5 bg-gradient-to-bl from-white to-indigo-600
+    dark:from-gray-500 dark:to-indigo-600 text-indigo-600">
+      <div className="bg-white dark:bg-gray-950 py-24 sm:py-32 rounded-md drop-shadow-xl">
         <div className="flex flex-col justify-center items-center mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl sm:text-center">
-            <h2 className="text-base font-semibold leading-7 text-indigo-800">
+            <h2 className="text-base font-bold leading-7 text-indigo-800 ">
               Your Interactive Document Companion
             </h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-[#212121]">
+            <p className="mt-2 text-3xl font-bold tracking-tight dark:text-gray-700 text-[#212121]">
               Transform Your PDFs into Interactive Conversations
             </p>
             <p className=" mt-6 text-lg leading-8 text-[#535353]">
               Introducing{" "}
               <span className="font-bold text-indigo-600">Chat with PDF.</span>
               <br />
-              <br /> Upload your document, and our chatbot will answer
+              <br /><p className="dark:text-gray-700">Upload your document, and our chatbot will answer
               questions, summarize content, and answer all your Qs. Ideal for
-              everyone,<span className="text-indigo-600">
-                {" "}
+              everyone,<span className="text-indigo-600">{" "}
                 Chat with PDF
-              </span>{" "}
-              <span className="font-bold">dynamic conversations</span>,
-              enhancing productivity 10x fold effortlessly.
+              </span>{" "}</p> 
+                
+              <span className="font-bold dark:text-gray-700">dynamic conversations</span>,
+              <span className="dark:text-gray-700">enhancing productivity 10x fold effortlessly.</span> 
             </p>
           </div>
-          <Button asChild className="mt-10">
-            <Link href="/dashboard">Get Started</Link>
-          </Button>
+          <div className="mt-10 flex space-x-5">
+            <div>
+            <ModeToggle />
+            </div>
+            <Button asChild className="">
+              <Link href="/dashboard">Get Started</Link>
+            </Button>
+          </div>
         </div>
         <div className="relative overflow-hidden pt-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -89,7 +96,7 @@ export default function Home() {
               className="mb-[-0%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
             />
             <div aria-hidden="true" className="relative">
-              <div className="absolute bottom-0 -inset-x-32 bg-gradient-to-t from-white/95 pt-[5%]"></div>
+              <div className="absolute bottom-0 -inset-x-32 bg-gradient-to-t from-white/95 pt-[5%] dark:from-black/95"></div>
             </div>
           </div>
         </div>
