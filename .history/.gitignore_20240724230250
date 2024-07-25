@@ -38,5 +38,5 @@ next-env.d.ts
 .vercel
 
 ./history
-./clj-kondo
-./lsp
+.clj-kondo
+.lsp
