@@ -42,4 +42,5 @@ next-env.d.ts
 .lsp
 
 service_key.json
+chat-to-pdf-generator\firebase.ts
 firebase.ts
