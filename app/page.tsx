@@ -97,7 +97,7 @@ export default function Home() {
             />
             <div aria-hidden="true" className="relative">
               <div className="absolute bottom-0 -inset-x-32 bg-gradient-to-t from-white/95 pt-[5%] dark:from-black/95"></div>
-            </div>
+            </div> 
           </div>
         </div>
 

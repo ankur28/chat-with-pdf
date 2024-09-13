@@ -40,3 +40,5 @@ next-env.d.ts
 .history
 .clj-kondo
 .lsp
+
+service_key.json
