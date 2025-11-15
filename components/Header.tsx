@@ -9,7 +9,7 @@ function Header() {
   return (
     <div className='flex justify-between dark:bg-black  bg-white shadow-sm p-5 border-b'>
       <Link href="/dashboard" className='text-2xl'>
-       <span className='dark:text-gray-300'>Chat with</span>  <span className='text-indigo-600'>PDF</span>
+        <span className='dark:text-gray-300'>Chat with</span>  <span className='text-indigo-600'>PDF</span>
       </Link>
 
       <SignedIn>
@@ -27,8 +27,8 @@ function Header() {
             </Link>
         </Button>
         {/* upgrade button */}
-       
-           <UserButton></UserButton>
+    
+          <UserButton></UserButton>
         </div>
       </SignedIn>
     </div>

@@ -60,6 +60,7 @@ export default function Home() {
             <h2 className="text-base font-bold leading-7 text-indigo-800 ">
               Your Interactive Document Companion
             </h2>
+            <>
             <p className="mt-2 text-3xl font-bold tracking-tight dark:text-gray-700 text-[#212121]">
               Transform Your PDFs into Interactive Conversations
             </p>
@@ -67,15 +68,20 @@ export default function Home() {
               Introducing{" "}
               <span className="font-bold text-indigo-600">Chat with PDF.</span>
               <br />
-              <br /><p className="dark:text-gray-700">Upload your document, and our chatbot will answer
+              <br />
+              <p className="dark:text-gray-700">Upload your document, and our chatbot will answer
               questions, summarize content, and answer all your Qs. Ideal for
               everyone,<span className="text-indigo-600">{" "}
                 Chat with PDF
               </span>{" "}</p> 
-                
+              <>
               <span className="font-bold dark:text-gray-700">dynamic conversations</span>,
               <span className="dark:text-gray-700">enhancing productivity 10x fold effortlessly.</span> 
+
+              </>
             </p>
+            </>
+        
           </div>
           <div className="mt-10 flex space-x-5">
             <div>
